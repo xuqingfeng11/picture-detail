@@ -1,0 +1,417 @@
+/* 设置主体和分割线 */
+html,body{
+	width:100%;
+	font-size:0.22rem;
+	font-family:'微软雅黑';
+}
+hr{
+	width: 90%;
+	margin:0.1rem auto;
+	background: lightgray;
+	height:0.03rem;
+	border:none;
+}
+.line1{
+	width: 100%;
+	height:0.1rem;
+	background: gray;
+}
+.line2{
+	width: 100%;
+	height:0.1rem;
+	background: lightgray;
+}
+.line3{
+	width: 80%;
+	height:0.05rem;
+	margin:0 auto;
+	background: lightgray;
+}
+/* 顶部蓝色区域 */
+.top{
+	width: 100%;
+	height:0.8rem;
+	background:rgb(2,161,252);
+	position:fixed;
+	z-index:3;
+	display:flex;
+}
+.top_1{
+	width: 100%;
+	height:0.8rem;
+}
+
+/* 下拉菜单选择地区 */
+#checkplace{
+	margin-left:0.2rem;
+	color:white;
+	font-size:0.3rem;
+	text-shadow:0.02rem 0.02rem 0.02rem gray;
+	display:inline-block;
+	opacity:0;
+}
+#checkplace li{
+	background:rgb(2,161,252);
+	width:0.8rem;
+	text-align:center;
+	/* animation:show 1s linear; */
+}
+#nanjing{
+	color:white;
+	text-shadow:0.02rem 0.02rem 0.02rem gray;
+	margin-top: 0.2rem;
+	margin-left: 0.3rem;
+	font-size:0.3rem;
+}
+#checkicon{
+	position:absolute;
+	top:0.26rem;
+	left:1rem;
+	width:0.3rem;
+}
+@keyframes show{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+@keyframes hide{
+	0%{
+		opacity:1;
+	}
+	100%{
+		opacity:0;
+	}
+}
+/* 请输入名称 */
+/* 文本框 */
+#searchinput{
+	position:absolute;
+	top:0.22rem;
+	left:1.8rem;
+	background:rgb(2,161,252);
+	border-radius:0.2rem;
+	height:0.38rem;
+	width:3rem;
+	outline:none;
+
+}
+#searchinput::-webkit-input-placeholder{
+	   	color:white;
+	   	text-indent:0.5rem;
+	   }
+/* 放大镜 */
+#searchicon{
+	position:absolute;
+	top:0.31rem;
+	left:1.9rem;
+	width: 0.4rem;
+	z-index:3;
+}
+/* 扫一扫 */
+#scan{
+	position:absolute;
+	top:0.25rem;
+	right:0.3rem;
+	width: 0.4rem;
+	z-index:3;
+}
+
+
+
+/* banner */
+.banner{
+	width: 100%;
+}
+.banner1{
+	height:2rem;
+	background:url('../images/banner/banner2.png') no-repeat;
+	background-size:cover;
+}
+.banner2{
+	height:2rem;
+	background:url('../images/banner/banner1.png') no-repeat;
+	background-size:cover;
+}
+
+
+
+/* 图组一 分类导航 */
+.content1{
+	width: 100%;
+	height:5rem;
+}
+/* 图标行div */
+.content1 .line_1{
+	width: 100%;
+	height:1.6rem;
+	display:flex;
+	/* flex-wrap:wrap; */
+	justify-content:space-around; 
+	align-items:center;
+}
+/* 图标行每一个div */
+.content1 .line_1>div{
+	width: 25%;
+	height: 1rem;
+	box-sizing: border-box;
+	text-align:center;
+	/* border:1px solid; */
+
+}
+.content1 .line_1 img{
+	width:0.9rem;
+	height:0.9rem;
+}
+.content1 .line_1 .imgs2{
+	width:1.1rem;
+}
+
+/* 文字行div */
+.content1 .line_2{
+	width: 100%;
+	height:0.6rem;
+	text-align:center;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around; 
+}
+/* 文字行每一个div */
+.content1 .line_2>div{
+	width: 1rem;
+	height: 0.3rem;
+	text-align:center;
+}
+.content1 .circle{
+	width:1rem;
+	height:0.2rem;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+}
+.content1 .circle div{
+	height:0.2rem;
+	width:0.2rem;
+	background:gray;
+	margin-left:0.1rem;
+	border-radius:0.1rem;
+}
+.content1 .circle .circle1{
+	background:orange;
+}
+
+
+
+
+
+
+
+
+
+
+/* 图组二 免费体验区 */
+.content2{
+	width: 100%;
+	height:4.3rem;
+	/* border:2px solid red; */
+}
+/* 上部文字 */
+.content2 .top_text{
+	display:flex;
+	justify-content:space-between;
+	/* background:pink; */
+	width: 90%;
+	margin:0.3rem auto;
+
+}
+/* 蓝色图标 */
+.blue{
+	width: 0.05rem;
+	height:0.3rem;
+	background:rgb(2,161,252);
+	display:inline-block;
+	position:absolute;
+}
+/* 倒计时 */
+#time{
+	color:rgb(2,161,252);
+}
+/* 图片行div */
+.content2 .line_3{
+	padding-top:0.3rem;
+	width: 90%;
+	margin:0 auto;
+	height:1rem;
+	/* border:2px solid red; */
+	display:flex;
+	justify-content:space-between;
+}
+.content2 .line_3 img{
+	width: 1.3rem;
+}
+/* 文字行div */
+.content2 .line_4{
+	padding-top:0.1rem;
+	width: 90%;
+	margin:0 auto;
+	height:0.3rem;
+	/* border:2px solid red; */
+	display:flex;
+	justify-content:space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 图组三 玖邦尼创富 */
+.content3{
+	width: 100%;
+	height:4rem;
+	/* border:2px solid red; */
+}
+.content3 .top_text{
+	display:flex;
+	justify-content:space-between;
+	width: 90%;
+	margin:0.3rem auto;
+
+}
+/* 图片行div */
+.content3 .line_5{
+	width: 100%;
+	display:flex;
+	justify-content:space-between;
+	width: 90%;
+	margin:0.2rem auto;
+}
+.content3 .line_5>div{
+	margin-right:0.05rem;
+}
+.content3 .line_5 img{
+	width: 1.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* 图组四 猜你喜欢 */
+.content4{
+	width: 100%;
+	/* height:13rem; */
+}
+.content4 .top_text{
+	display:flex;
+	justify-content:space-between;
+	/* background:pink; */
+	width: 90%;
+	margin:0.3rem auto;
+}
+.content4 .line_6{
+	width: 90%;
+	height:2rem;
+	margin:0 auto;
+	display:flex;
+}
+
+.content4 .line_6 .food{
+	width:40%;
+	padding-top:0.4rem;
+}
+.content4 .line_6 img{
+	width: 100%;
+	height:100%;
+}
+.content4 .line_6 .txt{
+	width:60%;
+	/* border:0.01rem solid red; */
+}
+.content4 .line_6 .txt p{
+	/* border:1px solid red; */
+	margin:0.32rem 0 0 0.3rem;
+	position:relative;
+	color:gray;
+}
+.content4 .line_6 .right1{
+	position:absolute;
+	right:0.03rem;
+
+}
+.content4 .line_6 .price{
+	font-size: 0.25rem;
+	font-weight:bold;
+	color:red;
+
+}
+.content4 .line_6 .right2{
+	position:absolute;
+	bottom:0.03rem;
+	right:0.03rem;
+
+}
+.content4 #allbuy{
+	font-weight:bold;
+	color:gray;
+	width:100%;
+	height:0.8rem;
+	text-align:center;
+	line-height:0.8rem;
+}
+/* 设置最后两个隐藏 */
+.content4 .line_6:nth-of-type(5){
+	display:none;
+}
+.content4 .line_6:nth-of-type(6){
+	display:none;
+}
+.content4 hr:nth-of-type(5){
+	display:none;
+}
+.content4 hr:nth-of-type(6){
+	display:none;
+}
+
+/* 底部蓝色区域 */
+.bottom{
+	width: 100%;
+	height:0.8rem;
+	background:rgb(2,161,252);
+	position:fixed;
+	z-index:8;
+	bottom:0;
+	display:flex;
+	justify-content:space-around;
+	padding:0.04rem ;
+}
+
+.bottom_1{
+	width: 100%;
+	height:0.8rem;
+	bottom:0;
+}
+
+.bottom .icons2{
+	/* border:1px solid red; */
+	width:0.9rem;
+	text-align:center;
+	color:white;
+	font-size:0.15rem;
+}
+.bottom .icons2 img{
+	width: 0.45rem;
+	height:0.45rem;
+}

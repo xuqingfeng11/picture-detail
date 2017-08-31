@@ -1,0 +1,8 @@
+需要安装插件cssrem-master，
+打开sublime--首选项--浏览插件--将cssrem-master复制进去
+打开首选项--packing setting--将插件文件cssrem.sublime-settings直接拖入--数值改成100 2--重启sublime
+{
+    "px_to_rem": 100,
+    "max_rem_fraction_length": 2,
+    "available_file_types": [".css", ".less", ".sass"]
+}
